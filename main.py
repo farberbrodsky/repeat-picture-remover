@@ -12,7 +12,7 @@ parser.add_argument(
     "--dry-run",
     dest="dry_run",
     default=False,
-    action=argparse.BooleanOptionalAction,
+    action="store_true",
     help="Only prints which files are supposed to be removed.")
 
 args = parser.parse_args()
